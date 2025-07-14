@@ -31,5 +31,12 @@
 
 ## 🚀 Quick Start (Firebase Setup)
 
-```bas
+```bash
+npm install -g firebase-tools
+firebase login
+firebase init
+# Choose: Hosting + Storage
+# Set public dir to: public
+# Single-page app: No
+firebase deploy
 
