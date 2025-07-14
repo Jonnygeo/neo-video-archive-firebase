@@ -1,39 +1,35 @@
-# Neo Video Archive (Firebase Edition)
+# 📼 Neo Video Archive (Firebase Edition)
 
-🧠 Built by Jonathan for the NeoLegacy AI Platform — where memory meets mission.
+![License: Custom NeoLegacy](https://img.shields.io/badge/License-Custom%20NeoLegacy-red)
+![Built by JonnyG](https://img.shields.io/badge/Built%20by-JonnyG-blue)
+![Module](https://img.shields.io/badge/Module-Video%20Storage%20Vault-purple)
+![Tech](https://img.shields.io/badge/Tech-Firebase%20Storage%2FHosting-orange)
 
-This version replaces Mux with Firebase Hosting and Storage for those who want to upload, store, and play back legacy video messages **without requiring a paid Mux account**.
+> **Where memory meets mission.**  
+> This module is part of the [NeoLegacy AI Platform](https://github.com/Jonnygeo/NeoLegacy) — designed to preserve video memories using Firebase instead of paid third-party services like Mux.
 
 ---
 
 ## 📦 Features
 
-- 🔐 Encrypted Video Upload via Firebase
-- 🎥 Self-hosted playback with simple HTML5 `<video>` element
-- 🧠 Metadata tagging for delivery intent (e.g., child ID, future date)
-- 🌐 Firebase Hosting + Storage (free-tier eligible)
-- 📁 JSON-based metadata structure (`video_metadata.json`)
+- 🔐 Encrypted video upload via Firebase
+- 🎥 Self-hosted playback with HTML5 `<video>` support
+- 🧠 Metadata tagging for delivery intent (e.g., child ID, future date, legacy triggers)
+- 🌐 Firebase Hosting + Storage (free-tier friendly)
+- 📁 Lightweight `video_metadata.json` structure for organizing videos
 
 ---
 
 ## 🧠 How It Works
 
-1. User uploads a video memory (via browser form)
-2. Metadata is saved in `video_metadata.json`
-3. Video is stored in Firebase Storage
-4. Playback is controlled manually or via script logic (future delivery)
+1. User uploads a video memory via form
+2. Metadata is written to `video_metadata.json`
+3. Video is saved securely in Firebase Storage
+4. Playback is handled via basic player or via AI scheduling (coming soon)
 
 ---
 
 ## 🚀 Quick Start (Firebase Setup)
 
-> Skip Mux — just use Firebase to host and store.
+```bas
 
-```bash
-npm install -g firebase-tools
-firebase login
-firebase init
-# Choose: Hosting + Storage
-# Public dir: public
-# Single-page app: No
-firebase deploy
